@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css?family=Livvic&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Livvic&display=swap");
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  height: 100vh;
+  background: url("../img/fondo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+#header {
+  position: relative;
+  background: #000; }
+  #header .logo {
+    width: 5%;
+    margin: auto; }
+    #header .logo img {
+      width: 100%; }
+  #header .social-networks {
+    float: right;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%; }
+    #header .social-networks img {
+      width: 55px;
+      margin: 0 10px; }
+    #header .social-networks .facebook img {
+      width: 40px; }
+    #header .social-networks .instagram img {
+      width: 45px; }
+
+#section {
+  width: 90%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-family: "Livvic", sans-serif;
+  color: #fff; }
+  #section .about {
+    width: 50%;
+    margin-top: 160px;
+    font-size: 40px; }
+  #section .links {
+    -ms-flex-item-align: end;
+    align-self: flex-end; }
+  #section a {
+    border: solid 2px white;
+    border-radius: 10px;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: #fff;
+    -webkit-transition: background ease .8s;
+    -o-transition: background ease .8s;
+    transition: background ease .8s; }
+    #section a:hover {
+      background: white;
+      color: black; }

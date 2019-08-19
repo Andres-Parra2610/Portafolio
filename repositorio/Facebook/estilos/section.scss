@@ -1,0 +1,74 @@
+@import "variables.scss";
+
+#section{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 70px;
+  font-family: $title;
+  width: 80%;
+  margin: auto;
+  h1{
+    font-size: 36px;
+  }
+  h2{
+    font-size: 19px;
+    font-weight: 1;
+  }
+  .title{
+    color: #333;
+  }
+
+
+  #create-account{
+    .form-section{
+      width: 90%;
+      .form{
+        .color-label{
+          margin-left: 12px;
+          font-weight: bold;
+          color: #90949c;
+        }
+        input{
+          margin: 10px;
+          line-height: 2;
+          font-size: 20px;
+          border: solid 1px #eee;
+          border-radius: 5px;
+        }
+      }
+
+      .form:nth-child(2),
+      .form:nth-child(3){
+        input{
+          width: 93%;
+        }
+      }
+    }
+
+    .terms{
+      margin-top: 15px;
+
+      p{
+        font-size: 12px;
+      }
+    }
+
+    .button-create-account{
+      input{
+        margin-top: 20px;
+        background: #5E9249;
+        width: 40%;
+        line-height: 2.5;
+        font-size: 19px;
+        border: none;
+        color: white;
+        font-weight: bold;
+        border-radius: 10px;
+
+        &:hover{
+          background: linear-gradient(#79bc64, #578843);
+        }
+      }
+    }
+  }
+}

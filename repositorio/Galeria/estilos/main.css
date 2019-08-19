@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+#header .navigation {
+  background: black;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: "Raleway", sans-serif; }
+  #header .navigation .image {
+    width: 15%; }
+    #header .navigation .image img {
+      width: 100%; }
+  #header .navigation .nav {
+    width: 50%; }
+    #header .navigation .nav ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      #header .navigation .nav ul li {
+        -webkit-box-flex: 1;
+        -ms-flex: auto;
+        flex: auto;
+        list-style: none; }
+        #header .navigation .nav ul li a {
+          text-decoration: none;
+          color: #fff;
+          font-size: 20px; }
+
+#section {
+  width: 90%;
+  margin: 0 auto; }
+  #section .title {
+    width: 100%;
+    margin: 20px 0; }
+    #section .title h1 {
+      text-align: center;
+      font-family: "Playfair Display", serif;
+      font-size: 40px; }
+  #section .gallery {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, Minmax(200px, 1fr));
+    grid-auto-rows: 200px; }
+    #section .gallery .images img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+      object-fit: cover;
+      border-radius: 20px; }
+
+@media screen and (max-width: 768px) {
+  #header .navigation {
+    display: block; }
+    #header .navigation .image {
+      margin: auto; }
+    #header .navigation .nav {
+      width: 100%; }
+      #header .navigation .nav ul {
+        display: block; }
+        #header .navigation .nav ul li {
+          text-align: center;
+          margin: 20px auto;
+          border-bottom: 1px solid #eee; }
+          #header .navigation .nav ul li a {
+            font-size: 17px; } }

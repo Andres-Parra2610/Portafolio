@@ -1,0 +1,60 @@
+*,
+::before,
+::after{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background: radial-gradient(
+	#407ba0,
+	#214154,
+	#13242f
+
+	);
+}
+
+.box{
+	height: 450px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+h1{
+	position: absolute;
+	top: 10px;
+	font-family: century gothic;
+	color: #eee;
+}
+
+.image{
+	height: 250px;
+	width: 250px;
+	background: url('mapa.png');
+	background-size: cover;
+	border-radius: 50%;
+	animation: rotate 7.5s infinite linear;
+	box-shadow: -20px -5px 0 0 rgba(0, 0, 0, .3) inset;
+}
+
+@keyframes rotate{
+	from{
+		background-position: left center;
+	}
+
+	to{
+		background-position: -490px center;
+	}
+}
+
+.image::after{
+	content: "";
+	position: absolute;
+	border-radius: 50%;
+	width: 1px;
+	height: 1px;
+	box-shadow: -20px -20px 20px 30px white;
+}

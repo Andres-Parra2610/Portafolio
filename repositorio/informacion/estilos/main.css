@@ -1,0 +1,270 @@
+.main {
+  width: 85%;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr;
+  grid-template-columns: 1fr 3fr;
+  font-family: sans-serif; }
+  .main #header {
+    background: #5e42a6; }
+    .main #header .logo {
+      width: 50%;
+      margin: 40px auto; }
+      .main #header .logo img {
+        width: 100%; }
+    .main #header .nav {
+      height: 50%;
+      width: 85%;
+      margin: auto; }
+      .main #header .nav ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        height: 100%;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        position: relative; }
+      .main #header .nav li {
+        -webkit-border-bottom: 1px solid #fff;
+        -moz-border-bottom: 1px solid #fff;
+        -ms-border-bottom: 1px solid #fff;
+        -o-border-bottom: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        width: 100%;
+        padding-bottom: 25px; }
+      .main #header .nav a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        position: absolute;
+        right: 0; }
+  .main #section h1 {
+    font-size: 30px;
+    margin: 30px 100px;
+    color: #5e42a6;
+    font-weight: bold; }
+  .main #section .cajas {
+    width: 85%;
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 20px;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    margin: 10px 100px 20px; }
+    .main #section .cajas .caja1, .main #section .cajas .caja2, .main #section .cajas .caja3, .main #section .cajas .caja4 {
+      width: 80%;
+      height: 220px;
+      position: relative;
+      margin-bottom: 50px; }
+      .main #section .cajas .caja1 .image1, .main #section .cajas .caja2 .image2, .main #section .cajas .caja3 .image3, .main #section .cajas .caja4 .image4 {
+        height: 100%;
+        width: 100%; }
+      .main #section .cajas .caja1 .text-hover, .main #section .cajas .caja2 .text-hover, .main #section .cajas .caja3 .text-hover, .main #section .cajas .caja4 .text-hover {
+        position: absolute;
+        background: rgba(254, 116, 114, 0.6);
+        height: 100%;
+        top: 0;
+        font-size: 20px;
+        display: none;
+        -webkit-transition: all .5;
+        -o-transition: all .5;
+        transition: all .5; }
+        .main #section .cajas .caja1 .text-hover h2, .main #section .cajas .caja2 .text-hover h2, .main #section .cajas .caja3 .text-hover h2, .main #section .cajas .caja4 .text-hover h2, .main #section .cajas .caja1 .text-hover p, .main #section .cajas .caja2 .text-hover p, .main #section .cajas .caja3 .text-hover p, .main #section .cajas .caja4 .text-hover p {
+          text-align: center;
+          margin-bottom: 10px;
+          color: #fff;
+          font-weight: bold; }
+      .main #section .cajas .caja1 h3, .main #section .cajas .caja2 h3, .main #section .cajas .caja3 h3, .main #section .cajas .caja4 h3 {
+        background: #fe7472;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        -webkit-transition: all 1s;
+        -o-transition: all 1s;
+        transition: all 1s;
+        position: relative;
+        z-index: -1; }
+      .main #section .cajas .caja1:hover h3, .main #section .cajas .caja2:hover h3, .main #section .cajas .caja3:hover h3, .main #section .cajas .caja4:hover h3 {
+        -webkit-transform: translateY(-30px);
+        -moz-transform: translateY(-30px);
+        -ms-transform: translateY(-30px);
+        -o-transform: translateY(-30px);
+        transform: translateY(-30px);
+        position: relative;
+        z-index: -1; }
+      .main #section .cajas .caja1:hover .text-hover, .main #section .cajas .caja2:hover .text-hover, .main #section .cajas .caja3:hover .text-hover, .main #section .cajas .caja4:hover .text-hover {
+        display: block; }
+    .main #section .cajas .caja1 .image1 {
+      background: url("../Recursos/proyecto-1.jpg") center/cover no-repeat; }
+    .main #section .cajas .caja1 .text-hover {
+      background: rgba(254, 116, 114, 0.6); }
+    .main #section .cajas .caja1 h3 {
+      background: #fe7472; }
+    .main #section .cajas .caja2 .image2 {
+      background: url("../Recursos/proyecto-2.jpg") center/cover no-repeat; }
+    .main #section .cajas .caja2 .text-hover {
+      background: rgba(116, 159, 254, 0.6); }
+    .main #section .cajas .caja2 h3 {
+      background: #749ffe; }
+    .main #section .cajas .caja3 .image3 {
+      background: url("../Recursos/proyecto-3.jpg") center/cover no-repeat; }
+    .main #section .cajas .caja3 .text-hover {
+      background: rgba(94, 66, 166, 0.6); }
+    .main #section .cajas .caja3 h3 {
+      background: #5e42a6; }
+    .main #section .cajas .caja4 .image4 {
+      background: url("../Recursos/proyecto-4.jpg") center/cover no-repeat; }
+    .main #section .cajas .caja4 .text-hover {
+      background: rgba(255, 178, 116, 0.6); }
+    .main #section .cajas .caja4 h3 {
+      background: #ffb274; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@media (max-width: 1024px) {
+  .main {
+    display: block; }
+    .main #header {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      padding: 20px; }
+      .main #header .logo {
+        width: auto;
+        margin: 0; }
+      .main #header .nav {
+        width: 60%;
+        margin: 0; }
+        .main #header .nav ul {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-pack: distribute;
+          justify-content: space-around;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+          flex-direction: row; }
+        .main #header .nav li {
+          border: none;
+          width: auto;
+          padding: 0; }
+        .main #header .nav a {
+          position: relative; }
+    .main #section h1 {
+      margin: 40px 40px; }
+    .main #section .cajas {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 90%;
+      margin: 60px auto; }
+      .main #section .cajas .caja1, .main #section .cajas .caja2, .main #section .cajas .caja3, .main #section .cajas .caja4 {
+        height: 150px; }
+      .main #section .cajas h3 {
+        font-size: 15px; }
+      .main #section .cajas h2, .main #section .cajas p {
+        font-size: 15px; } }
+
+@media (max-width: 768px) {
+  .main #header {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .main #header .nav {
+      width: 70%; }
+  .main #section h1 {
+    margin: 20px 50px; }
+  .main #section .cajas {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 40px auto; }
+  .main #section .cajas .caja1, .main #section .cajas .caja2, .main #section .cajas .caja3, .main #section .cajas .caja4 {
+    width: 45%; } }
+
+@media (max-width: 320px) {
+  .main {
+    width: 100%; }
+    .main #header .logo {
+      width: 60%; }
+    .main #header .nav ul {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+    .main #header .nav li {
+      border-bottom: 1px solid #fff;
+      width: 100%;
+      padding-bottom: 5px;
+      text-align: center;
+      margin-top: 20px; }
+    .main #section h1 {
+      margin: 20px; }
+    .main #section .cajas {
+      display: block; }
+      .main #section .cajas .caja1, .main #section .cajas .caja2, .main #section .cajas .caja3, .main #section .cajas .caja4 {
+        width: 100%;
+        height: 220px; } }

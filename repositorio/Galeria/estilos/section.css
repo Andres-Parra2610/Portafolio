@@ -1,0 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+#section {
+  width: 90%; }
+  #section .title {
+    margin: auto;
+    width: 100%; }

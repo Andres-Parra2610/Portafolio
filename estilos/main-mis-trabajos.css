@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css?family=Livvic&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Livvic&display=swap");
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  height: 100vh;
+  background: url("../img/fondo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+#header {
+  position: relative;
+  background: #000; }
+  #header .logo {
+    width: 5%;
+    margin: auto; }
+    #header .logo img {
+      width: 100%; }
+  #header .social-networks {
+    float: right;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%; }
+    #header .social-networks img {
+      width: 55px;
+      margin: 0 10px; }
+    #header .social-networks .facebook img {
+      width: 40px; }
+    #header .social-networks .instagram img {
+      width: 45px; }
+
+#section .title {
+  margin: 30px auto; }
+  #section .title h1 {
+    text-align: center;
+    color: #fff;
+    font-family: "Livvic", sans-serif;
+    font-size: 40px; }
+
+#section .works {
+  width: 70%;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, Minmax(200px, 1fr));
+  grid-auto-rows: 200px; }
+  #section .works .box img {
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    -webkit-transition: -webkit-transform ease .5s;
+    transition: -webkit-transform ease .5s;
+    -o-transition: transform ease .5s;
+    transition: transform ease .5s;
+    transition: transform ease .5s, -webkit-transform ease .5s; }
+    #section .works .box img:hover {
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      transform: scale(1.1); }
